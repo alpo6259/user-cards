@@ -1,0 +1,111 @@
+/* тело */
+* {
+  box-sizing: border-box;
+}
+:root {
+  --width-card: 280px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f1f2f4;
+}
+/* стили для карточки */
+.cards-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.cards-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+  margin: 10px auto;
+  border: 1px solid silver;
+  box-shadow: 0 0 0 1px skyblue;
+  border-radius: 20px;
+  width: 100%;
+  min-width: 200px;
+  max-width: var(--width-card);
+}
+
+.header-info-card {
+  background-color: #ffffff;
+  width: 100%;
+  /* height: calc(var(--width-card) / 2); */
+}
+
+.header-info-card > img {
+  width: calc(0.33 * var(--width-card));
+  height: calc(0.33 * var(--width-card));
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.header-info-card h2 {
+  padding: 10px;
+  color: black;
+  font-size: 18px;
+}
+.header-info-card p {
+  color: silver;
+  font-size: 14px;
+  padding: 10px;
+}
+.section-life h3 {
+  padding: 10px;
+  color: black;
+}
+.section-life p {
+  font-size: 14px;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+.section-life span {
+  padding: 10px 3px;
+  color: silver;
+}
+.section-life {
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.section-card a {
+  display: flex;
+  flex-direction: column;
+
+  margin: 10px;
+}
+
+.white-link {
+  text-decoration: none;
+  background-color: white;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 6px;
+  padding: 5px;
+  width: 150px;
+  text-decoration-color: blue;
+}
+
+.blue-link {
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+  border-radius: 6px;
+  padding: 5px;
+  width: 150px;
+}
+.card-footer {
+  margin: 5px;
+  color: red;
+  font-size: 6px;
+}
